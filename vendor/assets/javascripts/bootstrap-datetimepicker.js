@@ -315,9 +315,13 @@
         } else {
           dateStr = this.$element.find('input').val();
         }
+          alert(dateStr);
+
         if (dateStr) {
           this._date = this.parseDate(dateStr);
+          alert(this._date);
         }
+
         if (!this._date) {
           var tmp = new Date()
           this._date = UTCDate(tmp.getFullYear(),
