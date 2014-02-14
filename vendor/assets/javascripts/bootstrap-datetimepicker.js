@@ -315,11 +315,11 @@
         } else {
           dateStr = this.$element.find('input').val();
         }
-          alert(dateStr);
+          console.log("dat to parse: "+dateStr);
 
         if (dateStr) {
           this._date = this.parseDate(dateStr);
-          alert(this._date);
+          console.log("date parsed: "+this._date);
         }
 
         if (!this._date) {
